@@ -28,5 +28,6 @@ router.register(r'numbers', number_views.NumberViewSet, basename='number')
 
 urlpatterns = [
     re_path('^', include(router.urls)),
+    path('hello/', number_views.hello_world),
     path('admin/', admin.site.urls),
 ]
